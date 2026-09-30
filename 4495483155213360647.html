@@ -6,14 +6,14 @@
 <title>党领导一切，就是不能领导一头猪；中共惊爆“猴子事件”，底线撕得粉碎；乌克兰内部爆发政治危机。（7月16日） · 每日要闻综述</title>
 <meta name="description" content="全球风暴眼：巴菲特谢幕之作、美伊边缘博弈与南海舆论战 | 环球纵览·7月16日焦点解读 :root{ --ink:#121212; --ink-soft:#3a3a3a; --paper:#fdfdfb; --paper-warm:#f7f…">
 <link rel="canonical" href="https://blog.ltshijie.dpdns.org/2026/07/716.html">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav>
   <div class="wrap">
-    <a class="brand" href="/">每日要闻综述</a>
+    <a class="brand" href="index.html">每日要闻综述</a>
     <div class="links">
-      <a href="/">首页</a>
+      <a href="index.html">首页</a>
       <button id="themeBtn" aria-label="切换深色/浅色" title="切换深色/浅色">◐</button>
     </div>
   </div>
@@ -38,7 +38,265 @@
 <meta name="author" content="环球纵览编辑部">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;500;600;700;900&family=Noto+Sans+SC:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,700;0,900;1,700&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+<style>
+  :root{
+    --ink:#121212;
+    --ink-soft:#3a3a3a;
+    --paper:#fdfdfb;
+    --paper-warm:#f7f6f2;
+    --rule:#121212;
+    --rule-light:#c9c5bc;
+    --accent:#a3242f;
+    --byline-gray:#6b6b6b;
+  }
+  *{box-sizing:border-box;}
+  body{
+    margin:0;
+    background:var(--paper-warm);
+    color:var(--ink);
+    font-family:'Noto Sans SC','PingFang SC',sans-serif;
+    -webkit-font-smoothing:antialiased;
+  }
+  .page{
+    max-width:900px;
+    margin:0 auto;
+    background:var(--paper);
+    box-shadow:0 0 40px rgba(0,0,0,0.06);
+    padding:0 0 60px 0;
+  }
+
+  /* Masthead */
+  .masthead{
+    text-align:center;
+    padding:28px 20px 14px;
+    border-bottom:4px double var(--ink);
+  }
+  .masthead .kicker-top{
+    display:flex;
+    justify-content:space-between;
+    font-size:11px;
+    letter-spacing:0.08em;
+    color:var(--byline-gray);
+    padding-bottom:14px;
+    border-bottom:1px solid var(--rule-light);
+    margin-bottom:14px;
+    font-family:'Noto Sans SC',sans-serif;
+  }
+  .masthead h1.brand{
+    font-family:'Playfair Display','Noto Serif SC',serif;
+    font-weight:900;
+    font-size:52px;
+    letter-spacing:0.01em;
+    margin:6px 0 4px;
+  }
+  .masthead .tagline{
+    font-size:12.5px;
+    letter-spacing:0.25em;
+    color:var(--byline-gray);
+    text-transform:uppercase;
+  }
+
+  /* Headline block */
+  .headline-block{
+    padding:34px 40px 20px;
+    border-bottom:1px solid var(--rule-light);
+  }
+  .section-label{
+    display:inline-block;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.12em;
+    color:var(--accent);
+    text-transform:uppercase;
+    margin-bottom:14px;
+    border-bottom:2px solid var(--accent);
+    padding-bottom:3px;
+  }
+  h1.headline{
+    font-family:'Noto Serif SC',serif;
+    font-weight:900;
+    font-size:38px;
+    line-height:1.28;
+    margin:0 0 14px;
+    letter-spacing:0.01em;
+  }
+  .deck{
+    font-family:'Noto Serif SC',serif;
+    font-size:19px;
+    font-weight:400;
+    line-height:1.6;
+    color:var(--ink-soft);
+    margin:0 0 18px;
+  }
+  .byline-row{
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+    gap:8px;
+    font-size:13px;
+    color:var(--byline-gray);
+    border-top:1px solid var(--rule-light);
+    padding-top:12px;
+  }
+  .byline-row strong{color:var(--ink);}
+
+  /* Body */
+  .article-body{
+    padding:32px 40px 0;
+  }
+  .lede{
+    font-family:'Noto Serif SC',serif;
+    font-size:18px;
+    line-height:1.95;
+    color:var(--ink);
+  }
+  .lede::first-letter{
+    font-family:'Playfair Display',serif;
+    font-size:64px;
+    font-weight:900;
+    float:left;
+    line-height:0.8;
+    padding:8px 10px 0 0;
+    color:var(--accent);
+  }
+
+  .toc{
+    margin:30px 0;
+    padding:18px 24px;
+    background:var(--paper-warm);
+    border-left:3px solid var(--ink);
+    font-size:14px;
+    line-height:2;
+  }
+  .toc-title{
+    font-weight:700;
+    letter-spacing:0.08em;
+    text-transform:uppercase;
+    font-size:12px;
+    color:var(--byline-gray);
+    margin-bottom:8px;
+  }
+  .toc a{color:var(--ink); text-decoration:none; border-bottom:1px dotted var(--rule-light);}
+  .toc a:hover{color:var(--accent);}
+
+  article.story{
+    margin:44px 0;
+    padding-top:36px;
+    border-top:1px solid var(--rule-light);
+  }
+  article.story:first-of-type{border-top:none; padding-top:0;}
+
+  .story-eyebrow{
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.1em;
+    color:var(--accent);
+    text-transform:uppercase;
+    margin-bottom:8px;
+  }
+  h2.story-title{
+    font-family:'Noto Serif SC',serif;
+    font-size:26px;
+    font-weight:700;
+    line-height:1.4;
+    margin:0 0 16px;
+  }
+  .story-body{
+    font-size:16.5px;
+    line-height:1.95;
+    color:var(--ink);
+  }
+  .story-body p{margin:0 0 18px;}
+  .story-body h3{
+    font-family:'Noto Serif SC',serif;
+    font-size:19px;
+    font-weight:700;
+    margin:26px 0 12px;
+  }
+  .pull-quote{
+    font-family:'Noto Serif SC',serif;
+    font-style:italic;
+    font-size:21px;
+    line-height:1.6;
+    color:var(--ink-soft);
+    border-left:3px solid var(--accent);
+    padding:4px 0 4px 24px;
+    margin:26px 0;
+  }
+  ul.plain-list{
+    margin:0 0 18px;
+    padding-left:22px;
+    font-size:16.5px;
+    line-height:1.9;
+  }
+  ul.plain-list li{margin-bottom:6px;}
+  .note-box{
+    background:var(--paper-warm);
+    border:1px solid var(--rule-light);
+    padding:18px 22px;
+    font-size:14.5px;
+    line-height:1.85;
+    color:var(--ink-soft);
+    margin:22px 0;
+  }
+  .note-box .note-title{
+    font-weight:700;
+    color:var(--ink);
+    margin-bottom:6px;
+    font-size:13px;
+    letter-spacing:0.05em;
+    text-transform:uppercase;
+  }
+
+  .analysis-tag{
+    display:inline-block;
+    font-size:12px;
+    color:#fff;
+    background:var(--ink);
+    padding:2px 9px;
+    border-radius:2px;
+    margin-right:8px;
+    letter-spacing:0.04em;
+  }
+
+  /* Closing */
+  .closing{
+    margin-top:50px;
+    padding:30px 40px;
+    background:var(--ink);
+    color:var(--paper-warm);
+  }
+  .closing h2{
+    font-family:'Noto Serif SC',serif;
+    font-size:24px;
+    margin:0 0 14px;
+  }
+  .closing p{
+    font-size:15.5px;
+    line-height:1.9;
+    color:#d8d5cc;
+    margin:0 0 14px;
+  }
+
+  footer.site-footer{
+    text-align:center;
+    padding:26px 20px;
+    font-size:12px;
+    color:var(--byline-gray);
+    border-top:1px solid var(--rule-light);
+    margin-top:0;
+  }
+
+  @media (max-width:640px){
+    .headline-block, .article-body{padding-left:20px; padding-right:20px;}
+    h1.headline{font-size:28px;}
+    .deck{font-size:17px;}
+    .masthead h1.brand{font-size:38px;}
+    .lede{font-size:16.5px;}
+    h2.story-title{font-size:22px;}
+    .closing{padding:24px 20px;}
+  }
+</style>
 </head>
 <body>
 <div class="page">
@@ -189,7 +447,7 @@
 </html>
 <div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg2xeWPWl11Js8UwRe6OLsv3ZXrfoltbeVZRJn4-9AoyjGV0eIr3dNHon86BMhT5dlmRSDLPnC4JGz5WpIf1Vdq5LeR316xghKzcvY3JxglSudbfeJps0VNAN0mxwEkzm2_u3feC-EaJwmArdznxDnS2hYItHSV_APyQligxraH59FiffsYpbtv8abm0RA/s3000/1_716.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEgg2xeWPWl11Js8UwRe6OLsv3ZXrfoltbeVZRJn4-9AoyjGV0eIr3dNHon86BMhT5dlmRSDLPnC4JGz5WpIf1Vdq5LeR316xghKzcvY3JxglSudbfeJps0VNAN0mxwEkzm2_u3feC-EaJwmArdznxDnS2hYItHSV_APyQligxraH59FiffsYpbtv8abm0RA/s320/1_716.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuEbbeuwEKOdgRFaThoNxvkNPxRdDSW9_dcyj4v2KTu3NrCsVK9lTZSW5JjCAhdB91wdFhSYkeC4vBYObNAe16st-4s0JngyywH_sZlmkTW5tVwZ1w9gF0MpzOQ2y2WXZeK9sOSYr9lbP6Cux0_X89s400tzE-am-OEeHABAknuBd_lPbJSGC0vgMgjN-j/s3000/2_.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjuEbbeuwEKOdgRFaThoNxvkNPxRdDSW9_dcyj4v2KTu3NrCsVK9lTZSW5JjCAhdB91wdFhSYkeC4vBYObNAe16st-4s0JngyywH_sZlmkTW5tVwZ1w9gF0MpzOQ2y2WXZeK9sOSYr9lbP6Cux0_X89s400tzE-am-OEeHABAknuBd_lPbJSGC0vgMgjN-j/s320/2_.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh37wcL3dABP6EZtgwpzGA7o1HVvm6XLanWDl_VBiRUW0Z7TiyEc_IW_p95Lor_8hVlhza65B9ShtS9hFQpTKj7XXV34SPkxte27q7J0fo7xFrPap3xUcymwxlFdQlXVLqbqBSZHp4duSXgx96RQPWSR0h8VQybmz8jzPfCpnVrNsqw0pucywXUDeZLGgot/s3000/3_.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEh37wcL3dABP6EZtgwpzGA7o1HVvm6XLanWDl_VBiRUW0Z7TiyEc_IW_p95Lor_8hVlhza65B9ShtS9hFQpTKj7XXV34SPkxte27q7J0fo7xFrPap3xUcymwxlFdQlXVLqbqBSZHp4duSXgx96RQPWSR0h8VQybmz8jzPfCpnVrNsqw0pucywXUDeZLGgot/s320/3_.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj9Ndfulxagwnp5tuWTYTv-v1RytGQwlgY2tK7ueMANjwkGeJ02q9EerjCdpf-R_XVVT4_KW_NEuyYSkIZ866py91W7nKEhQ1yshJ8U0IAgpSq0OrTQGd8DZVgOQNpx3IudcnnRpcY1K8WYQ6Jl1gJsJDgsietKvpzuemtYaD0JwZHkGqRSSgV3qCburC4/s3000/4_.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjj9Ndfulxagwnp5tuWTYTv-v1RytGQwlgY2tK7ueMANjwkGeJ02q9EerjCdpf-R_XVVT4_KW_NEuyYSkIZ866py91W7nKEhQ1yshJ8U0IAgpSq0OrTQGd8DZVgOQNpx3IudcnnRpcY1K8WYQ6Jl1gJsJDgsietKvpzuemtYaD0JwZHkGqRSSgV3qCburC4/s320/4_.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirUCzjeSe0KgmrVn3yqN4dOFY4GEnf72SsgQHuwqvRtMQxDgdmnOaxBqd1O595E0PcCQcxoogDwaCPVvnbqach_dlwUUA3UuGNgNqO-uZhzCHjaev57ApKAUQ4HTno_Ogf4LCUArAHX9zdatNWHP1VBclOT4G-0Jtn0Qn9SvF0P5fVZSc9yXmzKElgnQ8e/s3000/5_.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEirUCzjeSe0KgmrVn3yqN4dOFY4GEnf72SsgQHuwqvRtMQxDgdmnOaxBqd1O595E0PcCQcxoogDwaCPVvnbqach_dlwUUA3UuGNgNqO-uZhzCHjaev57ApKAUQ4HTno_Ogf4LCUArAHX9zdatNWHP1VBclOT4G-0Jtn0Qn9SvF0P5fVZSc9yXmzKElgnQ8e/s320/5_.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn9NMwyVNQpCnyLRMTVzju7BCVlsAjeQKVJydHFql9DFjIH0Er_R_L-y9F8bzMnPdYjeGmQUhWnIe8kgns32Jj5Pv0tFeoBSTVZ5LlRPRnlpGkKvJDHgUoXuc18V5N-6Kjkk4cjARkrG6PzKn8pXPa6akiVQdm5MjwTW659zoHpw9MkHMsc1WtAxQnwWNx/s3000/6_.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhn9NMwyVNQpCnyLRMTVzju7BCVlsAjeQKVJydHFql9DFjIH0Er_R_L-y9F8bzMnPdYjeGmQUhWnIe8kgns32Jj5Pv0tFeoBSTVZ5LlRPRnlpGkKvJDHgUoXuc18V5N-6Kjkk4cjARkrG6PzKn8pXPa6akiVQdm5MjwTW659zoHpw9MkHMsc1WtAxQnwWNx/s320/6_.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeRUHMKr2oyvp5FrSarEV_I_L0pTZb3UJbz3Y3qyUkzxkqj_EEW7O47E25UrZkKtXyyHQCVKGwM1m3W04rNjSmcvMj-Is32l_6VOUgJQg329kRyltVu8Fj-lvut8tNGx6tIV8rEEXvpKpAUaOhiezfTDBc5NXNHNfyfNcyv1h_gv8S4_wQRj9aKrXPkXCV/s3000/7_.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjeRUHMKr2oyvp5FrSarEV_I_L0pTZb3UJbz3Y3qyUkzxkqj_EEW7O47E25UrZkKtXyyHQCVKGwM1m3W04rNjSmcvMj-Is32l_6VOUgJQg329kRyltVu8Fj-lvut8tNGx6tIV8rEEXvpKpAUaOhiezfTDBc5NXNHNfyfNcyv1h_gv8S4_wQRj9aKrXPkXCV/s320/7_.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnD_eMVeY4UsdRdCTFdZdrOYep0lBtz3CO7hsqWfwxW5Wz7roNh1ijiINC5dMde09ZwvZ6poTz4k_Z1M8h-jTZfxrFm5g_cl2Ye2aolrJHKRoMfB3GRQxddPfYIQRE0utLkLZDYb9hpj0YlY0elMPSBKECDykNsBqCDDrQkE7LgYTfqvuvcMsC4rpWGuGl/s3000/8_15.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhnD_eMVeY4UsdRdCTFdZdrOYep0lBtz3CO7hsqWfwxW5Wz7roNh1ijiINC5dMde09ZwvZ6poTz4k_Z1M8h-jTZfxrFm5g_cl2Ye2aolrJHKRoMfB3GRQxddPfYIQRE0utLkLZDYb9hpj0YlY0elMPSBKECDykNsBqCDDrQkE7LgYTfqvuvcMsC4rpWGuGl/s320/8_15.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimDnafOo1KrxTScTRGBVlBpRRUH8_MGwvPwwQt14eN-gPQMqMpbk9Na_7s0UBGTEEN2l9NeuIbinGGIpxxALoypj-5NvQCo12vGLmTWQJdgNLcXwJk0gJr8thHN0Gi32dmoe1LqtMCwRdPOUgkYBuuuHRXNQ7B62cKaHZHrvpgIYNIRuVhyphenhyphenP31hogCBtIS/s3000/9_.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEimDnafOo1KrxTScTRGBVlBpRRUH8_MGwvPwwQt14eN-gPQMqMpbk9Na_7s0UBGTEEN2l9NeuIbinGGIpxxALoypj-5NvQCo12vGLmTWQJdgNLcXwJk0gJr8thHN0Gi32dmoe1LqtMCwRdPOUgkYBuuuHRXNQ7B62cKaHZHrvpgIYNIRuVhyphenhyphenP31hogCBtIS/s320/9_.png"/></a></div><div class="separator" style="clear: both;"><a href="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCmIPclz5i767BWjH3Ec25hLGJdfhDKVx7MQrqs4d9AxlHvWcKfN5A2q2eklEvOy0niYjkxH7oP2sGdldRECNxRxiguU0EiltwNCAaDbWou6l2Dv13ExAJbA_ghlUEQJEoji-Wb9cuSupzsMrd7xxBeZj5Ambrben8dhdkTYpHtIXLoUSkg3J_sn5Iruks/s3000/10_.png" style="display: block; padding: 1em 0; text-align: center; "><img alt="" border="0" height="320" data-original-height="3000" data-original-width="2400" src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEjCmIPclz5i767BWjH3Ec25hLGJdfhDKVx7MQrqs4d9AxlHvWcKfN5A2q2eklEvOy0niYjkxH7oP2sGdldRECNxRxiguU0EiltwNCAaDbWou6l2Dv13ExAJbA_ghlUEQJEoji-Wb9cuSupzsMrd7xxBeZj5Ambrben8dhdkTYpHtIXLoUSkg3J_sn5Iruks/s320/10_.png"/></a></div>
   </div>
-  <p class="back"><a href="/">← 返回首页</a></p>
+  <p class="back"><a href="index.html">← 返回首页</a></p>
 </article>
 </main>
 <footer>

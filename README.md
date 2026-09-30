@@ -4,6 +4,6 @@
 
 - 线上地址：https://shengfeng2019.github.io/blog/
 - 内容来源：Blogger「每日要闻综述」(https://blog.ltshijie.dpdns.org)，共 65 篇文章
-- 构建脚本：`../build.py`（本地运行，输出到 `site/` 后推送）
+- 构建脚本：`build.py`（GitHub Actions 每日 17:00 北京时间自动运行）
 
 文章页均带有 canonical 指向 Blogger 原文。

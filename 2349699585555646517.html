@@ -6,14 +6,14 @@
 <title>习主席又被欺负了？中共这次不敢说的真相；孙宇晨的《我的女友景甜》炸翻中国网络背后；地表最强两公司合作，开辟人工智能新赛道。 · 每日要闻综述</title>
 <meta name="description" content="英伟达财报、尼泊尔冰川洪灾、孙宇晨绯闻:2026年8月27日国际财经与时事焦点解读 :root{ --ink:#121212; --ink-soft:#3a3a3a; --paper:#ffffff; --paper-off:#fafaf8…">
 <link rel="canonical" href="https://blog.ltshijie.dpdns.org/2026/08/blog-post_27.html">
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 <nav>
   <div class="wrap">
-    <a class="brand" href="/">每日要闻综述</a>
+    <a class="brand" href="index.html">每日要闻综述</a>
     <div class="links">
-      <a href="/">首页</a>
+      <a href="index.html">首页</a>
       <button id="themeBtn" aria-label="切换深色/浅色" title="切换深色/浅色">◐</button>
     </div>
   </div>
@@ -36,7 +36,250 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@400;600;700;900&family=Noto+Sans+SC:wght@400;500;600&family=Georgia&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="/style.css">
+<style>
+  :root{
+    --ink:#121212;
+    --ink-soft:#3a3a3a;
+    --paper:#ffffff;
+    --paper-off:#fafaf8;
+    --rule:#dcdcdc;
+    --rule-strong:#121212;
+    --accent:#a30000;
+    --gray-caption:#666666;
+  }
+  *{box-sizing:border-box;}
+  html,body{margin:0;padding:0;}
+  body{
+    background:var(--paper-off);
+    color:var(--ink);
+    font-family:"Noto Serif SC", Georgia, "Songti SC", serif;
+    -webkit-font-smoothing:antialiased;
+    line-height:1.9;
+  }
+  .page{
+    max-width:760px;
+    margin:0 auto;
+    background:var(--paper);
+    padding:0 24px 80px;
+    border-left:1px solid var(--rule);
+    border-right:1px solid var(--rule);
+  }
+  /* Masthead */
+  .masthead{
+    text-align:center;
+    padding:28px 0 14px;
+    border-bottom:4px double var(--ink);
+  }
+  .masthead .kicker{
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:11px;
+    letter-spacing:0.3em;
+    color:var(--accent);
+    text-transform:uppercase;
+    margin-bottom:10px;
+  }
+  .masthead .brand{
+    font-family:"Noto Serif SC", serif;
+    font-weight:900;
+    font-size:40px;
+    letter-spacing:0.04em;
+    margin:0;
+  }
+  .masthead .tagline{
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:12px;
+    color:var(--gray-caption);
+    margin-top:8px;
+    letter-spacing:0.05em;
+  }
+  .dateline-bar{
+    display:flex;
+    justify-content:space-between;
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:11px;
+    color:var(--ink-soft);
+    padding:8px 0;
+    border-bottom:1px solid var(--rule);
+    letter-spacing:0.04em;
+  }
+  /* Headline block */
+  .headline-block{
+    padding:34px 0 20px;
+    border-bottom:1px solid var(--rule);
+  }
+  .section-tag{
+    display:inline-block;
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:11px;
+    font-weight:600;
+    letter-spacing:0.15em;
+    color:var(--accent);
+    text-transform:uppercase;
+    margin-bottom:14px;
+  }
+  h1.headline{
+    font-size:34px;
+    line-height:1.28;
+    font-weight:900;
+    margin:0 0 16px;
+    letter-spacing:0.01em;
+  }
+  .subhead{
+    font-family:"Noto Sans SC", sans-serif;
+    font-weight:400;
+    font-size:17px;
+    color:var(--ink-soft);
+    line-height:1.7;
+    margin:0 0 20px;
+  }
+  .byline-row{
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:12.5px;
+    color:var(--gray-caption);
+    display:flex;
+    gap:16px;
+    flex-wrap:wrap;
+  }
+  .byline-row b{color:var(--ink);font-weight:600;}
+  /* Lead */
+  .lead{
+    padding-top:28px;
+    font-size:18px;
+  }
+  .lead p:first-of-type::first-letter{
+    float:left;
+    font-size:64px;
+    line-height:0.8;
+    font-weight:900;
+    padding-right:8px;
+    padding-top:6px;
+  }
+  article p{
+    margin:0 0 20px;
+    font-size:17px;
+    color:var(--ink);
+  }
+  .toc{
+    font-family:"Noto Sans SC", sans-serif;
+    background:var(--paper-off);
+    border:1px solid var(--rule);
+    padding:20px 22px;
+    margin:26px 0 8px;
+    font-size:13.5px;
+  }
+  .toc-title{
+    font-family:"Noto Serif SC", serif;
+    font-weight:700;
+    font-size:14px;
+    letter-spacing:0.08em;
+    margin-bottom:10px;
+    border-bottom:2px solid var(--ink);
+    display:inline-block;
+    padding-bottom:4px;
+  }
+  .toc ol{margin:10px 0 0;padding-left:20px;}
+  .toc li{margin-bottom:6px;color:var(--ink-soft);}
+  .toc a{color:var(--ink);text-decoration:none;}
+  .toc a:hover{color:var(--accent);}
+
+  section.story{
+    padding-top:40px;
+    margin-top:8px;
+    border-top:1px solid var(--rule);
+  }
+  .story-num{
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:12px;
+    font-weight:700;
+    letter-spacing:0.2em;
+    color:var(--accent);
+    margin-bottom:8px;
+  }
+  h2.story-title{
+    font-size:25px;
+    line-height:1.4;
+    font-weight:700;
+    margin:0 0 6px;
+  }
+  .story-source{
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:12.5px;
+    color:var(--gray-caption);
+    margin-bottom:18px;
+    font-style:italic;
+  }
+  .analysis-box{
+    background:var(--paper-off);
+    border-left:3px solid var(--ink);
+    padding:16px 20px;
+    margin:22px 0;
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:15px;
+    color:var(--ink-soft);
+  }
+  .analysis-box .lbl{
+    font-weight:600;
+    color:var(--accent);
+    letter-spacing:0.06em;
+    font-size:12px;
+    text-transform:uppercase;
+    display:block;
+    margin-bottom:8px;
+  }
+  .pull-quote{
+    font-size:22px;
+    line-height:1.55;
+    font-weight:600;
+    text-align:center;
+    padding:30px 10px;
+    margin:26px 0;
+    border-top:1px solid var(--rule);
+    border-bottom:1px solid var(--rule);
+  }
+  ul.plain{padding-left:22px;margin:0 0 20px;}
+  ul.plain li{margin-bottom:8px;font-size:16.5px;}
+  .fact-strip{
+    display:flex;
+    flex-wrap:wrap;
+    gap:16px;
+    margin:20px 0 26px;
+  }
+  .fact{
+    flex:1 1 140px;
+    border:1px solid var(--rule);
+    padding:14px 16px;
+    font-family:"Noto Sans SC", sans-serif;
+  }
+  .fact .num{
+    font-family:"Noto Serif SC", serif;
+    font-weight:900;
+    font-size:26px;
+    display:block;
+    color:var(--ink);
+  }
+  .fact .lab{
+    font-size:12px;
+    color:var(--gray-caption);
+    margin-top:4px;
+    display:block;
+  }
+  footer{
+    margin-top:50px;
+    padding-top:24px;
+    border-top:4px double var(--ink);
+    font-family:"Noto Sans SC", sans-serif;
+    font-size:12.5px;
+    color:var(--gray-caption);
+    text-align:center;
+  }
+  footer p{margin:6px 0;}
+  @media(max-width:600px){
+    .page{padding:0 16px 60px;}
+    h1.headline{font-size:27px;}
+    h2.story-title{font-size:21px;}
+    .pull-quote{font-size:19px;}
+  }
+</style>
 </head>
 <body>
 <div class="page">
@@ -254,7 +497,7 @@
 </html>
 
   </div>
-  <p class="back"><a href="/">← 返回首页</a></p>
+  <p class="back"><a href="index.html">← 返回首页</a></p>
 </article>
 </main>
 <footer>
