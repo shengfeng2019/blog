@@ -222,9 +222,9 @@ def shared_css():
 def nav_html():
     return """<nav>
   <div class="wrap">
-    <a class="brand" href="/">""" + BLOG_NAME + """</a>
+    <a class="brand" href="index.html">""" + BLOG_NAME + """</a>
     <div class="links">
-      <a href="/">首页</a>
+      <a href="index.html">首页</a>
       <button id="themeBtn" aria-label="切换深色/浅色" title="切换深色/浅色">◐</button>
     </div>
   </div>
@@ -280,7 +280,7 @@ def page_shell(title, desc, body_html, canonical=""):
 <title>{htmlmod.escape(title)}</title>
 <meta name="description" content="{htmlmod.escape(desc)}">
 {canon}
-<link rel="stylesheet" href="/style.css">
+<link rel="stylesheet" href="style.css">
 </head>
 <body>
 {nav_html()}
@@ -295,7 +295,7 @@ def page_shell(title, desc, body_html, canonical=""):
 
 
 def post_item(p):
-    return ('<a class="post-item" href="/{}.html">'
+    return ('<a class="post-item" href="{}.html">'
             '<span class="post-date">{}</span>'
             '<span class="post-title">{}</span></a>').format(
                 p["pid"], fmt_date_short(p["published"]),
@@ -310,7 +310,7 @@ def write_article(post):
   <div class="post-body">
 {sanitize(post['content'])}
   </div>
-  <p class="back"><a href="/">← 返回首页</a></p>
+  <p class="back"><a href="index.html">← 返回首页</a></p>
 </article>"""
     out = page_shell(post["title"] + " · " + BLOG_NAME,
                      excerpt(post["content"], 120), body,
