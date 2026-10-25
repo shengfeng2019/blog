@@ -364,6 +364,31 @@ def write_readme(n):
         f.write(readme)
 
 
+def write_sitemap_robots(posts):
+    def day(p):
+        return (p.get("published") or "")[:10] or None
+
+    latest = day(posts[0]) if posts else None
+    urls = [(PAGES_URL, latest, "1.0")]
+    for p in posts:
+        urls.append(("%s%s.html" % (PAGES_URL, p["pid"]), day(p), "0.7"))
+    lines = ['<?xml version="1.0" encoding="UTF-8"?>',
+             '<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">']
+    for loc, lastmod, prio in urls:
+        lines.append("  <url>")
+        lines.append("    <loc>%s</loc>" % loc)
+        if lastmod:
+            lines.append("    <lastmod>%s</lastmod>" % lastmod)
+        lines.append("    <priority>%s</priority>" % prio)
+        lines.append("  </url>")
+    lines.append("</urlset>")
+    with open(os.path.join(OUT_DIR, "sitemap.xml"), "w", encoding="utf-8") as f:
+        f.write("\n".join(lines) + "\n")
+    with open(os.path.join(OUT_DIR, "robots.txt"), "w", encoding="utf-8") as f:
+        f.write("User-agent: *\nAllow: /\n\nSitemap: %ssitemap.xml\n" % PAGES_URL)
+    print("SITEMAP_OK urls=%d" % len(urls))
+
+
 def main():
     posts = fetch_all_posts()
     posts.sort(key=lambda p: p["published"], reverse=True)
@@ -372,6 +397,7 @@ def main():
     for p in posts:
         write_article(p)
     write_home(posts)
+    write_sitemap_robots(posts)
     write_readme(len(posts))
     print(f"BUILD_OK posts={len(posts)}")
 
