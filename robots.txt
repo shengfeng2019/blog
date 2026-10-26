@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://shengfeng2019.github.io/blog/sitemap.xml
