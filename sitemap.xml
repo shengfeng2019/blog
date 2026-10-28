@@ -2,17 +2,17 @@
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
     <loc>https://shengfeng2019.github.io/blog/</loc>
-    <lastmod>2026-10-27</lastmod>
+    <lastmod>2026-10-28</lastmod>
     <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://shengfeng2019.github.io/blog/6604222760564803327.html</loc>
+    <lastmod>2026-10-28</lastmod>
+    <priority>0.7</priority>
   </url>
   <url>
     <loc>https://shengfeng2019.github.io/blog/4967169039309796053.html</loc>
     <lastmod>2026-10-27</lastmod>
-    <priority>0.7</priority>
-  </url>
-  <url>
-    <loc>https://shengfeng2019.github.io/blog/6020877819639512721.html</loc>
-    <lastmod>2026-10-26</lastmod>
     <priority>0.7</priority>
   </url>
 </urlset>
