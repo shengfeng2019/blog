@@ -39,13 +39,15 @@ def fetch(url):
 def fetch_all_posts():
     posts = []
     start = 1
-    while len(posts) < MAX_POSTS:
+    pages = 0
+    while len(posts) < MAX_POSTS and pages < 600:
         url = f"{FEED_BASE}?max-results={PAGE_SIZE}&start-index={start}"
         data = fetch(url)
         root = ET.fromstring(data)
         entries = root.findall("a:entry", NS)
         if not entries:
             break
+        pages += 1
         for e in entries:
             eid = (e.findtext("a:id", default="", namespaces=NS) or "").strip()
             m = re.search(r"post-(\d+)", eid)
@@ -63,9 +65,12 @@ def fetch_all_posts():
                     break
             posts.append({"pid": pid, "title": title, "published": pub,
                           "content": content, "link": link})
-        if len(entries) < PAGE_SIZE:
-            break
-        start += PAGE_SIZE
+        # Blogger now returns only a few entries per page even when
+        # max-results=150 is requested (observed 4/page on 2026-11-11), and
+        # its rel="next" link wrongly jumps by PAGE_SIZE, which would skip
+        # posts. Advance by what was actually returned and keep going until
+        # a page comes back empty; a short page is NOT the end of the feed.
+        start += len(entries)
     return posts
 
 
