@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html lang="zh-CN" data-theme="auto">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>需求描述---影刀 · 每日要闻综述</title>
+<meta name="description" content="需要访问网站goacross2029.com 用户 密码 列表 xty5555 QQ 0 2033-11-26 21:18:20 0 2023-12-02 21:27:29 25256:xty5555 zysssss19991116 QQ …">
+<link rel="canonical" href="https://blog.ltshijie.dpdns.org/2024/11/blog-post.html">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<nav>
+  <div class="wrap">
+    <a class="brand" href="index.html">每日要闻综述</a>
+    <div class="links">
+      <a href="index.html">首页</a>
+      <button id="themeBtn" aria-label="切换深色/浅色" title="切换深色/浅色">◐</button>
+    </div>
+  </div>
+</nav>
+<main class="wrap">
+<article class="article">
+  <div class="kicker">每日要闻综述</div>
+  <h1>需求描述---影刀</h1>
+  <div class="meta">2024年11月28日 · <a href="https://blog.ltshijie.dpdns.org/2024/11/blog-post.html" target="_blank" rel="noopener">阅读原文</a></div>
+  <div class="post-body">
+
+
+
+需要访问网站goacross2029.com
+
+用户 密码 列表
+
+xty5555		QQ	0	2033-11-26 21:18:20	0	2023-12-02 21:27:29	25256:xty5555	
+zysssss19991116		QQ	0	2031-11-11 22:20:55	0	2023-12-02 22:58:53	18473:zysssss19991116	
+Peter_Li98		QQ	0	2033-11-26 02:07:39	0	2023-12-03 11:58:38	18811:Peter_Li98	
+lyj-mcc-Jasmine0216		QQ	0	2033-02-10 15:57:53	0	2023-12-03 13:35:46	18577:lyj-mcc-Jasmine0216	
+Jling-68		QQ	0	2032-08-05 14:17:04	0	2023-12-03 15:31:28	19679:Jling-68	
+
+
+每个用户登录进去会有不同提示，主要是填写了联系方式的就不会跳提示框
+
+需要整理出填了 联系方式的用户
+
+
+  </div>
+  <p class="back"><a href="index.html">← 返回首页</a></p>
+</article>
+</main>
+<footer>
+  <div class="wrap">
+    <span>© 2026 王升锋 · 每日要闻综述</span>
+    <span>Hosted on GitHub Pages</span>
+  </div>
+</footer>
+<script>
+(function(){
+  var root=document.documentElement, btn=document.getElementById('themeBtn');
+  try{
+    var saved=localStorage.getItem('theme');
+    if(saved==='light'||saved==='dark') root.setAttribute('data-theme',saved);
+  }catch(e){}
+  function syncIcon(){
+    var t=root.getAttribute('data-theme');
+    var dark = t==='dark' || (t==='auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+    btn.textContent = dark ? '◑' : '◐';
+  }
+  btn.addEventListener('click',function(){
+    var t=root.getAttribute('data-theme');
+    var dark = t==='dark' || (t==='auto' && matchMedia('(prefers-color-scheme: dark)').matches);
+    var next = dark ? 'light' : 'dark';
+    root.setAttribute('data-theme',next);
+    try{localStorage.setItem('theme',next);}catch(e){}
+    syncIcon();
+  });
+  syncIcon();
+})();
+</script>
+</body>
+</html>
